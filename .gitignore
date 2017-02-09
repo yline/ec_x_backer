@@ -1,7 +1,10 @@
+#新增的
+.settings/
+
 #Config of WorkPlace
 .metadata/
 RemoteSystemsTempFiles/
-#.recommenders/
+.recommenders/
 
 # Built application files
 #*.apk
@@ -14,7 +17,7 @@ RemoteSystemsTempFiles/
 #*.class
 
 # Generated files
-#bin/
+bin/
 #gen/
 
 # Gradle files
