@@ -32,7 +32,7 @@ public class BaseUnitTest
         if (StringUtils.isEmpty(springXmlPath))
         {
             // springXmlPath = "classpath*:spring-*.xml";
-            springXmlPath = "classpath*:/main/resources/spring-*.xml";
+            springXmlPath = "classpath*:resource/spring-*.xml";
         }
         
         try
