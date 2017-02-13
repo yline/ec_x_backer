@@ -9,6 +9,7 @@ public class Config
     @Bean(name = "music", initMethod = "init", destroyMethod = "destroy")
     public EMusic setPlayFormat()
     {
+        System.out.println("music start");
         return new Music();
     }
 }
