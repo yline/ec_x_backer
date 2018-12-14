@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/aop
+    	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+    	
+    <!-- 切面类 -->
+    <bean id="apsect" class="com.aop.aspect.SampleAspect"></bean>
+    <!-- 业务类 -->
+    <bean id="aspectBiz" class="com.aop.aspect.SampleService"></bean>
+    
+    <!-- 配置信息 -->
+    <aop:config>
+        <aop:aspect id="aspectAOP" ref="apsect"></aop:aspect>
+        <aop:pointcut expression="execution(* com.aop.aspect..(..))" id="pointCut"></aop:pointcut>
+    </aop:config>
+</beans>
